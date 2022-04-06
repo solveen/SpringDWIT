@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean class="Beans.StudentBean" name="sBean">-->
+<!--&lt;!&ndash;        value as an element &ndash;&gt;-->
+<!--        <property name="id">-->
+<!--            <value>1</value>-->
+<!--        </property>-->
+<!--&lt;!&ndash;        value as an attribute&ndash;&gt;-->
+<!--        <property name="name" value="Solveen">-->
+<!--        </property>-->
+<!--        <property name="password" value="123">-->
+<!--        </property>-->
+<!--    </bean>-->
+<!--    <bean class="Beans.StudentBean" name="soBean" p:id="2" p:name="Solobean" p:password="1234">-->
+<!--    </bean>-->
+
+
+    <bean class="Beans.StudentBean" name="soBean">
+        <constructor-arg name="id">
+            <value>1</value>
+        </constructor-arg> <constructor-arg name="name">
+            <value>Solo</value>
+        </constructor-arg> <constructor-arg name="password">
+            <value>Bean123</value>
+        </constructor-arg>
+
+    </bean>
+    <bean class="Beans.StudentBean" name="sBean">
+<!--        value as an element-->
+        <constructor-arg name="id">
+            <value>1</value>
+        </constructor-arg> <constructor-arg name="name">
+            <value>Solo</value>
+        </constructor-arg> <constructor-arg name="password">
+            <value>Bean123</value>
+        </constructor-arg>
+
+    </bean>
+
+
+    <bean class="BeansAddition.Addition" name="addition">
+<!--        value as an attribute-->
+        <constructor-arg name="a" value="1">
+        </constructor-arg>
+        <constructor-arg name="b" value="2">
+        </constructor-arg>
+    </bean>
+</beans>
