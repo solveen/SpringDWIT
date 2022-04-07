@@ -43,9 +43,12 @@
 
     <bean class="BeansAddition.Addition" name="addition">
 <!--        value as an attribute-->
-        <constructor-arg name="a" value="1">
+        <constructor-arg name="a" value="1" type="int" index="0">
         </constructor-arg>
-        <constructor-arg name="b" value="2">
+        <constructor-arg name="b" value="2" type="int" index="1">
         </constructor-arg>
     </bean>
+
+
+
 </beans>

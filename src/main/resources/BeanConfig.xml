@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="CollectionInject.CollectionInjectorEx" name="collectionInjector" p:name="SOLVEEN" >
+
+        <property name="address">
+            <list>
+                <value>Sifal</value>
+                <value>Kapan</value>
+                <value>Kathmandu</value>
+            </list>
+
+        </property>
+
+        <property name="location">
+            <set>
+                <value>Sifal</value>
+                <value>Kapan</value>
+            </set>
+        </property>
+
+        <property name="college">
+
+            <map>
+                <entry  key="0" value="Herald">
+
+                </entry>
+                <entry  key="1" value="Softwarica">
+
+                </entry>
+            </map>
+        </property>
+
+    </bean>
+
+
+</beans>
