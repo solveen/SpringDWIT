@@ -23,7 +23,6 @@ public class Addition {
         this.a = Integer.parseInt(a);
         this.a = Integer.parseInt(b);
         System.out.println("Calling from String:");
-
     }
 
     public void addNumber() {
